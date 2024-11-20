@@ -1,5 +1,5 @@
 genesis-file="/opt/besu/genesis.json"
-data-path="/opt/besu/data"
+data-path="/opt/besu/database" #default for Besu
 node-private-key-file="/opt/besu/key"
 rpc-http-enabled=true
 rpc-http-api=["ETH","QBFT","WEB3", "DEBUG"]

@@ -37,6 +37,12 @@ The example command will send 10000 transactions in batches of 500 tx from 100 d
 pandoras-box -url http://127.0.0.1:8545 -m "exit warm sadness vault clip rent educate pluck gentle vehicle news verb" -t 10000 -b 500 -s 100 -o ./myOutput.json
 ```
 
+* Lighter Test:
+
+```bash
+pandoras-box -url http://127.0.0.1:8545 -m "exit warm sadness vault clip rent educate pluck gentle vehicle news verb" -t 100 -b 5 -s 10 -o ./myOutput.json
+```
+
 ### Stress test with ERC20 transfers:
 
 The example command will send 10000 ERC20 transfers in batched on 500 tx from 10 different accounts. The output will be saved in `./myOutput.json`.
