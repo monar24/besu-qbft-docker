@@ -5,13 +5,14 @@ rpc-http-enabled=true
 rpc-http-api = ["ADMIN", "DEBUG", "MINER", "ETH", "TXPOOL", "NET", "TRACE", "WEB3", "PLUGINS", "QBFT"]
 host-allowlist=["*"]
 rpc-http-cors-origins=["all"]
-tx-pool="legacy" #sequenced | legacy | layered
-tx-pool-limit-by-account-percentage=1.0
-tx-pool-max-size="1000000"
-
+tx-pool="layered" #sequenced | legacy | layered
+tx-pool-max-future-by-sender=2000 
+tx-pool-layer-max-capacity=125000000 
+cache-last-blocks=1024
 
 sync-mode = "SNAP"
 data-storage-format = "BONSAI"
 Xsnapsync-bft-enabled=true
 sync-min-peers = 1
-# Xbonsai-parallel-tx-processing-enabled = true
+Xbonsai-parallel-tx-processing-enabled = true
+
