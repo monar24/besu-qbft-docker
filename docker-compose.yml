@@ -1,6 +1,6 @@
 services:
   validator1:
-    image: hyperledger/besu:24.6.0
+    image: hyperledger/besu:24.10.0
     command: [ "--config-file=/opt/besu/common-config.toml",
                "--identity=validator1",
                "--p2p-host=10.42.0.2",
@@ -19,7 +19,7 @@ services:
         ipv4_address: 10.42.0.2
 
   validator2:
-    image: hyperledger/besu:24.6.0
+    image: hyperledger/besu:24.10.0
     command: [ "--config-file=/opt/besu/common-config.toml",
                "--identity=validator2",
                "--bootnodes=enode://ad83ac93fcc30a30f3e1bb6467623e45719167be50d13dccd8361cbca478cb540069869d1bae16de0f8b17a28f26f1c6c4dc12e71f240b366c6ff6f02f3fb93e@10.42.0.2:30303",
@@ -47,7 +47,7 @@ services:
         ipv4_address: 10.42.0.3
 
   validator3:
-    image: hyperledger/besu:24.6.0
+    image: hyperledger/besu:24.10.0
     command: [ "--config-file=/opt/besu/common-config.toml",
                "--identity=validator3",
                "--bootnodes=enode://ad83ac93fcc30a30f3e1bb6467623e45719167be50d13dccd8361cbca478cb540069869d1bae16de0f8b17a28f26f1c6c4dc12e71f240b366c6ff6f02f3fb93e@10.42.0.2:30303",
@@ -67,7 +67,7 @@ services:
         ipv4_address: 10.42.0.4
 
   validator4:
-    image: hyperledger/besu:24.6.0
+    image: hyperledger/besu:24.10.0
     command: [ "--config-file=/opt/besu/common-config.toml",
                "--identity=validator4",
                "--bootnodes=enode://ad83ac93fcc30a30f3e1bb6467623e45719167be50d13dccd8361cbca478cb540069869d1bae16de0f8b17a28f26f1c6c4dc12e71f240b366c6ff6f02f3fb93e@10.42.0.2:30303",

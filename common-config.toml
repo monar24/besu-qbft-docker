@@ -2,9 +2,16 @@ genesis-file="/opt/besu/genesis.json"
 data-path="/opt/besu/database" #default for Besu
 node-private-key-file="/opt/besu/key"
 rpc-http-enabled=true
-rpc-http-api=["ETH","QBFT","WEB3", "DEBUG"]
+rpc-http-api = ["ADMIN", "DEBUG", "MINER", "ETH", "TXPOOL", "NET", "TRACE", "WEB3", "PLUGINS", "QBFT"]
 host-allowlist=["*"]
 rpc-http-cors-origins=["all"]
-tx-pool="legacy"
+tx-pool="legacy" #sequenced | legacy | layered
 tx-pool-limit-by-account-percentage=1.0
 tx-pool-max-size="1000000"
+
+
+sync-mode = "SNAP"
+data-storage-format = "BONSAI"
+Xsnapsync-bft-enabled=true
+sync-min-peers = 1
+# Xbonsai-parallel-tx-processing-enabled = true
