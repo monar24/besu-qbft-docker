@@ -75,3 +75,8 @@ image: hyperledger/besu:24.3.3-local
 ```
 
 Then, run `docker-compose up` to start the network with the local image.
+
+## Chainlens 
+clone the repo then do: 
+
+`NODE_ENDPOINT=http://host.docker.internal:8545 DISPLAY_NETWORK_TAB=enabled docker-compose -f docker-compose.yml up`
